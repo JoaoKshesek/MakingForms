@@ -31,7 +31,7 @@ h3 {
     margin-bottom: 8px;
 }
 
-.page {
+main {
     width: 750px;
     margin: auto;
 }
@@ -76,6 +76,13 @@ fieldset {
     line-height: 34px;
     color: #535971;
     border-bottom: 1px solid #E6E6F0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    border-bottom: none;
 }
 
 .personal-info .fieldset-wrapper legend {
@@ -127,15 +134,17 @@ input {
     gap: 22px;
 }
 
+.col-2 > div {
+    width: 50%;
+}
 
-
-
-
-
-
-
-
-
+.col-3 > div:nth-child(1) {
+    width: 100%;
+}
+.col-3 .time {
+    margin-left: 32px;
+    margin-right: 10px;
+}
 
 footer {
  height: 160px;   
@@ -166,16 +175,4 @@ footer button:focus {
 
 footer button:hover {
     background: #d1405d;
-}
-
-.col-3, .col-2 {
-    display: flex;
-    gap: 20px;
-}
-
-.col-3 > div:nth-child(1) {
-    width: 100%;
-}
-.col-2 > div {
-    width: 50%;
 }
